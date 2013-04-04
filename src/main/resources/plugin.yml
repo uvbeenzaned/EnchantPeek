@@ -1,0 +1,9 @@
+name: EnchantPeek
+main: net.mended_drum.EnchantPeek.EnchantPeek
+version: 0.8.0
+description: Check which enchantments you will get.
+author: jinks
+permissions:
+  enchantpeek.allow:
+    description: Allows use of the enchantment peek.
+    default: op
