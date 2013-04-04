@@ -1,0 +1,42 @@
+// This is a first try to implement "manual" Enchanting in
+// makeEnchantedItemStack(), before I found EnchantmentManager.a(random, item, cost)
+// keeping this here in case I need to reference it in the future
+
+                /*List list = EnchantmentManager.b(new java.util.Random(), temp, cost);
+
+		  boolean flag = temp.id == Item.BOOK.id;
+		  //if (flag) {temp.id = Item.ENCHANTED_BOOK.id;}
+
+		  if (list != null) {
+		  // CraftBukkit start
+		  Map<org.bukkit.enchantments.Enchantment, Integer> enchants = new java.util.HashMap<org.bukkit.enchantments.Enchantment, Integer>();
+		  for (Object obj : list) {
+		  EnchantmentInstance instance = (EnchantmentInstance) obj;
+		  enchants.put(org.bukkit.enchantments.Enchantment.getById(instance.enchantment.id), instance.level);
+		  }
+		  CraftItemStack item = CraftItemStack.asCraftMirror(temp);
+
+		  boolean applied = !flag;
+		  for (Map.Entry<org.bukkit.enchantments.Enchantment, Integer> entry : enchants.entrySet()) {
+		  try {
+		  if (flag) {
+		  int enchantId = entry.getKey().getId();
+		  if (Enchantment.byId[enchantId] == null) {
+		  continue;
+		  }
+
+		  EnchantmentInstance enchantment = new EnchantmentInstance(enchantId, entry.getValue());
+		  Item.ENCHANTED_BOOK.a(temp, enchantment);
+		  applied = true;
+		  p.sendMessage("APPLIED " + entry.getKey());
+		  temp.id = Item.ENCHANTED_BOOK.id;
+		  break;
+		  } else {
+		  item.addEnchantment(entry.getKey(), entry.getValue());
+		  temp = CraftItemStack.asNMSCopy(item);
+		  }
+		  } catch (IllegalArgumentException e) {
+		  // Just swallow invalid enchantments
+		  }
+		  }
+		  }*/
