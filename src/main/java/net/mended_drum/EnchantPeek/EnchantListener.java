@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.bukkit.GameMode;
-import org.bukkit.craftbukkit.v1_6_R2.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_7_R1.inventory.CraftItemStack;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -17,8 +17,8 @@ import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.meta.EnchantmentStorageMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import net.minecraft.server.v1_6_R2.EnchantmentManager;
-import net.minecraft.server.v1_6_R2.ItemStack;
+import net.minecraft.server.v1_7_R1.EnchantmentManager;
+import net.minecraft.server.v1_7_R1.ItemStack;
 
 public class EnchantListener implements Listener {
 
@@ -130,7 +130,7 @@ public class EnchantListener implements Listener {
             put("LOOT_BONUS_MOBS",          "Looting");
             put("DAMAGE_ALL",               "Sharpness");
             put("DAMAGE_UNDEAD",            "Smite");
-            put("DAMAGE_ARTHROPODS",        "Bane of Anthropods");
+            put("DAMAGE_ARTHROPODS",        "Bane of Arthropods");
             put("FIRE_ASPECT",              "Fire Aspect");
             put("ARROW_INFINITE",           "Infinity");
             put("ARROW_FIRE",               "Flame");
